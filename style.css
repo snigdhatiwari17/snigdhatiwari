@@ -1,40 +1,67 @@
-body {
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-        /* Set the URL of your background image */
-        background-image: url('assets/barcelona/SAM_1340.JPG');
-    
-        /* Make the background image cover the entire page */
-        background-size: cover;
-        
-        /* Set the background image to no repeat */
-        background-repeat: no-repeat;
-        
-        /* Fix the background image so it doesn't scroll with the page */
-        background-attachment: fixed;
-        
-        /* Optional: Add a background color that will be displayed while the image is loading */
-        background-color: #ffffff; /* You can change this color to match your site's theme */
-    }
-    .gallery h2 {
-        background-color: rgba(255, 255, 255, 0.8); /* White background with opacity */
-        padding: 10px;
-        border-radius: 5px;
-    }
-    
-    .photos img {
-        border: 3px solid #fff; /* White border around photos for better distinction */
-        margin: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow to lift off the background */
-    }
-    
 
-
-header, footer {
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
-    color: black;
-    text-align: center;
-    padding: 1em;
+    background-image: url('assets/barcelona/SAM_1340.JPG');
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
-/* Add more styles as needed */
+header, footer {
+    position: absolute;
+    width: 100%;
+}
+
+#label-top-left {
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    /* Additional styling */
+}
+
+#label-top-right {
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+    /* Additional styling */
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* Additional styling */
+}
+
+#label-bottom-left {
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    /* Additional styling */
+}
+
+/* Additional styles for text formatting */
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    /* Additional styling */
+}
+
+p {
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    margin: 0;
+    /* Additional styling */
+}
